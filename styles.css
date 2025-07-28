@@ -158,8 +158,13 @@ section {
 }
 
 h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
     color: var(--secondary);
+}
+
+h3 {
+    margin-bottom: 1rem;
+    color: var(--text);
 }
 
 /* Projects */
