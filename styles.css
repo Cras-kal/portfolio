@@ -37,7 +37,7 @@ body {
 .navbar {
     background-color: var(--navPrim);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
     position: fixed;
@@ -51,6 +51,7 @@ body {
     color: var(--text);
     background-color: var(--accent);
     padding: 5px;
+    margin-right: 2rem;
     border-radius: 10px;
     text-decoration: none;
     transition: color 0.5s;
@@ -65,6 +66,22 @@ body {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+}
+
+.nav-links #emailMe{
+    color: var(--text);
+    background-color: var(--primary);
+    border: 2px solid var(--text);
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    margin-left: 10rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.nav-links #emailMe:hover {
+    background-color: var(--accent);
 }
 
 .nav-links a {
@@ -153,8 +170,8 @@ h2 {
     border-left: 4px solid var(--accent);
 }
 
-/* Contact */
-.contact a {
+/* socials */
+.socials a {
     color: var(--accent);
     text-decoration: underline;
 }
