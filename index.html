@@ -10,73 +10,101 @@
 </head>
 
 <body>
+  <!--nav bar part-->
   <header>
-    <nav class="navbar">
-      <h1 class="home">
-        <a href="#home">BHV</a>
-      </h1>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#socials">Socials</a></li>
-        <li><a href="mailto:bh12.vallejo@gmail.com" id="emailMe">Email Me</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 class="home">
+          <a href="#home">BHV</a>
+        </h1>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#socials">Socials</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-    
+  <!--end of nav bar part-->
 
+  <!---------Hero Section------------->
   <section class="hero" id="home">
     <img src="images/me1.jpg" alt="myPicture">
-    <h2>Hello, I'm Brian Howell Vallejo</h2>
-    <h3>Fueled by curiosity and a love for technology, I enjoy turning ideas into working systems through both software and hardware.</h3>
-    <p class="scroll-hint">↓ Scroll down to learn more</p>
+    <h2 class="hero-welcome">Hello, I'm Brian Howell Vallejo</h2>
+    <h3 class="hero-intro">  Fueled by curiosity and a love for technology, I enjoy turning ideas into working systems through both software and hardware. Welcome to my website! ✨</h3>
+    <a href="mailto:bh12.vallejo@gmail.com" id="emailMe">Email Me</a>
+    <p class="scroll-hint">↓ Scroll down to learn more ↓</p>
+  </section>
+  <!---------end of Hero Section------------->
+
+  <!-- -------Projects Section------------->
+  <section id="projects" class="projects odd">
+    <div class="container">
+      <h2>Projects</h2>
+      <h3>Here are my projects throughout my academic journey.</h3>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>ARNISENSE Training Dummy</h3>
+          <p>Our Thesis Project</p>
+        </div>
+        <div class="project-card">
+          <h3>Miniature Marvel: Automated IoT Smart Mini Home</h3>
+          <p>Miniature Smart Home Automation</p>
+        </div>
+        <div class="project-card">
+          <h3>Object-Following Robot</h3>
+          <p>A robot that mindlessly follows anyone near him.</p>
+        </div>
+        <div class="project-card">
+          <h3>0 to F Hexadecimal Counter</h3>
+          <p>Tinkered with logic ICs</p>
+        </div>
+        <div class="project-card">
+          <h3>ATX Power Supply Conversion</h3>
+          <p>Took our old PC's Power Supply for my electronics.</p>
+        </div>
+        <div class="project-card">
+          <h3>Game Development (Unity + C#)</h3>
+          <p>Game dev is fun with Unity!</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <h3>Here are my projects throughout my academic journey.</h3>
-    <div class="project-card">
-      <h3>ARNISENSE Training Dummy</h3>
-      <p>A sensor-integrated Arnis training system using Raspberry Pi and wearables.</p>
-    </div>
-    <div class="project-card">
-      <h3>Miniature Marvel: Automated IoT Smart Mini Home</h3>
-      <p>IoT-based smart home controller using ESP32 and Arduino with sensors and actuators. Also controlled by bluetooth made with MIT Inventor App.</p>
-    </div>
-    <div class="project-card">
-      <h3>Object-Following Robot</h3>
-      <p>Built a small autonomous robot using Arduino and ultrasonic sensors that can detect and follow nearby objects. Programmed logic to control motor movement based on real-time distance readings.</p>
-    </div>
-    <div class="project-card">
-      <h3>0 to F Hexadecimal Counter</h3>
-      <p>Designed and assembled a digital circuit using logic gates and ICs to count and display hexadecimal values (0 to F) on a 7-segment display. Practiced circuit design and debugging fundamentals.</p>
-    </div>
-    <div class="project-card">
-      <h3>ATX Power Supply Conversion</h3>
-      <p>Modified a used ATX power supply to safely power electronics projects. Worked on identifying voltage rails, rewiring connectors, and performing output testing for prototyping use.</p>
-    </div>
-    <div class="project-card">
-      <h3>Game Development (Unity + C#)</h3>
-      <p>Started development of a 2D mobile game using Unity engine and C#. Focused on gameplay mechanics, UI design, and explored monetization strategies and performance tuning (in progress).</p>
-    </div>
-    <div class="project-card">
-      <h3>Faculty Search & View System (Python Kivy + MySQL)</h3>
-      <p>Created a simple GUI application using Kivy framework in Python to search and display faculty information. Integrated MySQL database for backend storage and retrieval of records.</p>
+  <!---------end of Projects Section------------->
+
+  <section id="about" class="about even">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a Computer Engineering student passionate about building software and hardware integrations. I specialize in microcontrollers, web development, and tech innovation.</p>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I'm a Computer Engineering student passionate about building software and hardware integrations. I specialize in microcontrollers, web development, and tech innovation.</p>
-  </section>
-
-  <section id="socials" class="socials">
-    <h2>My Socials</h2>
-    <p>My linkedin account <a href="https://www.linkedin.com/in/brian-howell-vallejo-371377318/" target="_blank">linkedin.com/in/brian-howell-vallejo-371377318/</a></p>
-    <p>My Github <a href="https://github.com/Cras-kal" target="_blank">https://github.com/Cras-kal</a></p>
+  <section id="socials" class="socials odd">
+    <div class="container">
+      <h2>My Socials</h2>
+      <div class="socials-container">
+          <a class="socials-card" href="https://www.linkedin.com/in/brian-howell-vallejo-371377318/" target="_blank">
+            <img src="images/linkedin-icon.jpeg" alt="Linkedin Icon">
+            <p>About my Linkedin</p>
+          </a>        
+          <a class="socials-card" href="https://github.com/Cras-kal" target="_blank">
+            <img src="images/Github-icon.jpeg" alt="Github Icon">
+            <p>Check out my code</p>
+          </a>
+          <a class="socials-card" href="https://www.youtube.com/@notrealbrn/videos" target="_blank">
+            <img src="images/yt-icon.jpeg" alt="Youtube Icon">
+            <p>I upload random vids</p>
+          </a>
+      </div>
+    </div>
   </section>
   
-  <h1 style="text-align: center; margin-bottom: 2rem;">Still adding more features on the website. If you have suggestions, don't hesitate to email me 😊</h1>
+  <div class="botMessage">
+    <div class="container">
+      <h1>Still adding more features on the website. If you have suggestions, don't hesitate to <a href="mailto:bh12.vallejo@gmail.com">email me 😊</a></h1>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Brian Howell Vallejo. All rights reserved.</p>
