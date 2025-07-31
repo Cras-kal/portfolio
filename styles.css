@@ -18,14 +18,6 @@
     
     --navPrim: #333533; */
 
-    /*palette ver3*/
-    /* --primary: #0D1117;      
-    --secondary: #58A6FF;    
-    --accent: #1F6FEB;      
-    --background: #242423;   
-    --text: #3FB950;
-    
-    --navPrim: #941b0c;  */
 }
 
 /* Reset & base styles */
@@ -240,6 +232,7 @@ p {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 
+    text-decoration: none; 
 }
 
 .cards:hover {
@@ -277,6 +270,8 @@ p {
     margin-top: 1rem;
     font-size: 1.8em;
 }
+
+
 
 .socials-card img{
     width: auto;
