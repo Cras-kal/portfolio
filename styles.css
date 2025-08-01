@@ -164,11 +164,11 @@ body {
 
 .scroll-hint {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2px;
     transform:translateX(-50%);
     color: var(--accent);
     animation: bounce 1.5s infinite;
-    font-size: 1.2rem;
+    font-size: 3rem;
 }
 
 @keyframes bounce {
