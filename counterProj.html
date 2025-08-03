@@ -5,9 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0 to F Hexadecimal Counter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png" type="image/png"/>
+    <meta property="og:image" content="images/icon.png">
+    <script src="app.js"></script>
+
 </head>
 <body>
-    <h1>0 to F Hexadecimal Counter</h1>
-    <p>Using </p>
+    <!--nav bar part-->
+    <header>
+    <div class="nav-container">
+        <nav class="navbar">
+        <h1 class="home">
+            <a href="index.html#home">BHV</a>
+        </h1>
+        <ul class="nav-links">
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="index.html#Socials">Socials</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+    <!--end of nav bar part-->
+    <!-- Hero section for project pages -->
+    <section class="heroProject">
+            <div class="hero-content">
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/f9jo1dyma2Q?si=nFR6_kVgxvLtisyW"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <div class="hero-text">
+                <h1>0 to F Hexadecimal Counter - Febuary 2024</h1>
+                <p>Building this 0 to F counter was one of my proudest moments. It pushed me to understand logic gates, IC datasheets, and how they all come together in a working digital system.</p>
+            </div>
+    </section>
+    <!-- End of Hero section for project pages -->
+    <section class="det-proj odd">
+        <div class="proj-container">
+            <img src="images/hex_proj/theGeneralCircuit.png" alt="Logic Circuit">
+            <div class="proj-container-text">
+                <h1>The Main Circuit</h1>
+                <p>This is the main circuit I built and tested using Logisim. It uses a 4-bit counter made from JK flip-flops with a timer. Connected to a decoder that sends the right signals to a 7-segment display, letting it count from 0 to F in hexadecimal.</p>
+            </div>
+        </div>
+    </section>
+    <section class="det-proj even">
+        <div class="proj-container">
+            <img src="images/hex_proj/Hexa decoder.jpg" alt="Logic Circuit">
+            <div class="proj-container-text">
+                <h1>The Decoder</h1>
+                <p>This is what it looks inside the decoder from the main circuit. Now this is the most complicated part, since I only have access with 7448 7-Segment decoder, which is only 0 to 9. I had to improvise with the actual logic of the A to F. This is the whole hexadecimal decoder which took almost two of my breadboards.</p>
+            </div>
+        </div>
+    </section>
+    <section class="det-proj odd">
+        <div class="proj-container">
+            <img src="images/hex_proj/prototyping.png" alt="Logic Circuit">
+            <div class="proj-container-text">
+                <h1>The Protyping Process</h1>
+                <p>Putting theory into action! I tested the decoder first since it was the trickiest part. I hooked it up to 4 buttons acting as the 4-bit input, along with LEDs to see if the signals were flowing right. It took the most time because I had to make sure every gate worked just like in the simulator.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Brian Howell Vallejo. All rights reserved.</p>
+    </footer>
 </body>
 </html>

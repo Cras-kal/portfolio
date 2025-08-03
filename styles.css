@@ -115,7 +115,7 @@ body {
 .hero {
     max-width: 100vw; 
     padding: 0; 
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--primary);
     text-align: center;
   
@@ -123,7 +123,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative; 
 
     opacity: 0;
     transform: translateY(20px);
@@ -138,13 +137,19 @@ body {
     border: 7px solid var(--background);
     box-shadow: 4px 4px 8px var(--text);
     margin-bottom: 1rem;
+
+
     transition: border-color 0.5s, box-shadow 0.5s;
+
+
 }
 
 .hero .hero-welcome {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--accent);
+
+
 }
 
 .hero .hero-intro {
@@ -154,6 +159,7 @@ body {
     color: var(--text);    
     max-width: 70ch; 
     padding: 0 1rem; 
+
 }
 
 .hero img:hover {
@@ -187,6 +193,7 @@ body {
     color: var(--accent);
     animation: bounce 1.5s infinite;
     font-size: 3rem;
+    cursor: default;
 }
 
 @keyframes bounce {
@@ -334,3 +341,107 @@ footer {
 
 }
 /*-------------end of footer-----------------*/
+
+/* Project HTML Pages *
+/* Hero section for project pages */
+.heroProject { /* section */
+    max-width: 100vw; 
+    padding: 0; 
+    min-height: 100vh;
+    background-color: var(--primary);
+    text-align: center;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0; /* for transition */
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero-content{ /* video or image */
+    margin: 50px;
+    border: 2px solid var(--primary);
+
+    transition: box-shadow 0.3s, border 0.3s, transform 0.3s;
+}
+
+.hero-content:hover{
+    border: 5px solid var(--text);
+    box-shadow: 5px 5px 7px var(--accent);
+    transform: translateY(-15px);
+}
+
+.hero-text{
+    margin: 50px;
+    text-align: center;
+}
+
+.hero-text h1{
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    font-size: 1.8rem;
+}
+
+.hero-text p{
+    font-size: 1.5rem;
+}
+
+.heroProject.visible{ /* for transition of the hero section */
+    opacity: 1;
+    transform: translateY(0);
+}
+/* end of hero section for project pages */
+
+/* Details of the Project page */
+.det-proj.odd .proj-container { /* holds the content img and text */
+    margin: 50px;
+    max-width: 100vw;
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+
+    flex-direction: row-reverse; /* for odd projects */
+}
+
+.det-proj.even .proj-container{ /* holds the content img and text */
+    margin: 50px;
+    max-width: 100vw;
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    
+}
+
+.proj-container img{
+    height: 400px;
+    width: auto;
+    padding: 20px;
+}
+
+.proj-container-text p{
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    max-width: 800px;
+    text-align: left;
+}
+
+.proj-container-text h1{
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    
+    color: var(--secondary);
+    text-align: left;
+    
+}
+/* end of details of the project page */
+/*----------end of HERO Project HTML Pages-------------*/
