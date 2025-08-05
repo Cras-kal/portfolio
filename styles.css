@@ -421,7 +421,7 @@ footer {
     transform: translateY(0);
 }
 
-.goBack-link{
+.navbar .goBack-link{
     background-color: var(--background);
     border: 2px solid var(--text);
     color: var(--text);
@@ -433,13 +433,13 @@ footer {
 
     position: absolute;
     transform: translateX(0);
-    top: 100px;
-    left: 80px;
+    top: 20px;
+    left: 30px;
 
     transition: background-color 0.5s, transform 0.5s;
 }
 
-.goBack-link:hover{
+.navbar .goBack-link:hover{
     background-color: var(--accent);
     transform: translateX(-5%);
 }
