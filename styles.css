@@ -392,6 +392,29 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+.goBack-link{
+    background-color: var(--background);
+    border: 2px solid var(--text);
+    color: var(--text);
+    border-radius: 5px;
+    padding: 4px 25px;
+    font-size: 0.9rem;
+
+    text-decoration: none;
+
+    position: absolute;
+    transform: translateX(0);
+    top: 100px;
+    left: 80px;
+
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.goBack-link:hover{
+    background-color: var(--accent);
+    transform: translateX(-5%);
+
 /* end of hero section for project pages */
 
 /* Details of the Project page */
