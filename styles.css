@@ -201,27 +201,28 @@ body {
     50% { transform: translateY(10px); }
 }
 
-.videoPage{    
-    background-color: var(--background);
-    border: 2px solid var(--accent);
-    border-radius: 20px;
+.navbar .videoPage{    
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 15px;
     padding: 3px 10px;
     text-decoration: none;
     color: var(--text);
+    font-size: 1.2rem;
 
     position: absolute;
-    top: 100px;
-    right: 40px;
+    top: 20px;
+    right: 30px;
 
-    animation: leftBounce 1.5s infinite;
+    /* animation: leftBounce 1.5s infinite; */
     
     transition: background-color 0.5s;
 }
 
-@keyframes leftBounce {
+/* @keyframes leftBounce {
     0%, 100% { transform: translateX(0); }
     50% { transform: translateX(10px); }
-}
+} */
 
 .videoPage:hover{
     background-color: var(--accent);
@@ -528,12 +529,15 @@ footer {
     transition: border-color 0.5s, box-shadow 0.5s;
 }
 
+.heroEditor img:hover {
+    border: 7px solid var(--accent);
+    box-shadow: 4px 4px 8px var(--secondary);
+}
+
 .heroEditor .heroEditor-welcome {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--accent);
-
-
 }
 
 .heroEditor .heroEditor-intro {
@@ -546,10 +550,7 @@ footer {
 
 }
 
-.heroEditor img:hover {
-    border: 7px solid var(--accent);
-    box-shadow: 4px 4px 8px var(--secondary);
-}
+
 
 .heroEditor.visible{
     opacity: 1;
