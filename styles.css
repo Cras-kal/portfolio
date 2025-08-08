@@ -109,11 +109,9 @@ body {
 }
 
 .navbar .goBack-link{
-    background-color: var(--background);
-    border: 2px solid var(--text);
     color: var(--text);
     border-radius: 5px;
-    padding: 4px 25px;
+    padding: 4px 8px;
     font-size: 0.9rem;
 
     text-decoration: none;
@@ -121,8 +119,7 @@ body {
     position: absolute;
     transform: translateX(0);
     top: 20px;
-    left: 30px;
-
+    left: 20px;
     transition: background-color 0.5s, transform 0.5s;
 }
 
@@ -231,7 +228,7 @@ body {
     padding: 3px 10px;
     text-decoration: none;
     color: var(--text);
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     position: absolute;
     top: 20px;
@@ -239,7 +236,12 @@ body {
 
     /* animation: leftBounce 1.5s infinite; */
     
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.navbar .videoPage:hover {
+    background-color: var(--accent);
+    transform: translateX(5%);
 }
 
 /* @keyframes leftBounce {
