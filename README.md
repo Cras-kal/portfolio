@@ -6,7 +6,7 @@ This site showcases my skills in everything I do and love doing.
 Build with:
 - HTML
 - CSS
-- JavaScript (soon)
+- JavaScript (just a bit)
 
 for now, this is what i have made, and will be making updates in time to time.
 
