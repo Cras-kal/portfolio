@@ -10,13 +10,13 @@
     --navPrim: #0a192fe7;
 
     /*palette ver2*/
-    /* --primary: #333533;      
+    /* --primary: #F3E2D4;      
     --secondary: #B0413E;    
     --accent: #247BA0;      
     --background: #242423;   
     --text: #FFFFFF;
     
-    --navPrim: #333533; */
+    --navPrim: #F3E2D4; */
 
 }
 
@@ -138,6 +138,7 @@ body {
     min-height: 100vh;
     background-color: var(--primary);
     text-align: center;
+    margin: 0;
   
     display: flex;
     flex-direction: column;
@@ -150,7 +151,7 @@ body {
 }
 
 
-.hero img {
+.hero .heroImg {
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -160,16 +161,20 @@ body {
 
 
     transition: border-color 0.5s, box-shadow 0.5s;
+}
 
-
+.hero .backgroundImg{
+    position: absolute;
+    min-width: 100vw;
+    max-height: 100vh;
+    z-index: -5; /* behind the content */
+    opacity: 0.07; /* semi-transparent */
 }
 
 .hero .hero-welcome {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--accent);
-
-
 }
 
 .hero .hero-intro {
@@ -179,10 +184,9 @@ body {
     color: var(--text);    
     max-width: 70ch; 
     padding: 0 1rem; 
-
 }
 
-.hero img:hover {
+.hero .heroImg:hover {
     border: 7px solid var(--accent);
     box-shadow: 4px 4px 8px var(--secondary);
 }
@@ -244,18 +248,11 @@ body {
     transform: translateX(5%);
 }
 
-/* @keyframes leftBounce {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(10px); }
-} */
-
 .videoPage:hover{
     background-color: var(--accent);
     animation: none;
 }
-
 /*-----------end of hero section------------*/
-
 
 /* FOR SECTIONS */
 section {
@@ -320,7 +317,6 @@ p {
 /*-----------end of for sections------------*/
 
 /* -------------Projects---------------*/
-
 .project-card h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
@@ -518,8 +514,15 @@ footer {
     transition: opacity 2s ease, transform 2s ease;
 }
 
+.heroEditor .heroBackground {
+    position: absolute;
+    min-width: 100vw;
+    max-height: 100vh;
+    z-index: -5; /* behind the content */
+    opacity: 0.1; /* semi-transparent */
+}
 
-.heroEditor img {
+.heroEditor .heroImg {
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -531,7 +534,7 @@ footer {
     transition: border-color 0.5s, box-shadow 0.5s;
 }
 
-.heroEditor img:hover {
+.heroEditor .heroImg:hover {
     border: 7px solid var(--accent);
     box-shadow: 4px 4px 8px var(--secondary);
 }
@@ -556,3 +559,5 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* end of video editing portfolio hero section */
