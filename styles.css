@@ -189,6 +189,7 @@ body {
 .hero .heroImg:hover {
     border: 7px solid var(--accent);
     box-shadow: 4px 4px 8px var(--secondary);
+    cursor: pointer;
 }
 
 #emailMe{
