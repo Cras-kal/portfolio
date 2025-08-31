@@ -545,7 +545,6 @@ footer {
     box-shadow: 4px 4px 8px var(--text);
     margin-bottom: 1rem;
 
-
     transition: border-color 0.5s, box-shadow 0.5s;
 }
 
@@ -574,5 +573,40 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/*Platforms section*/
+.editSkills-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.editSkills {
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.3s ease;
+    width: 150px;
+    text-align: center;
+}
+
+.editSkills:hover {
+    transform: translateY(-10px);
+}
+
+.editSkills img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+
+.editSkills p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/*end of Platforms section*/
 
 /* end of video editing portfolio hero section */
