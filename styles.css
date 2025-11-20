@@ -501,6 +501,29 @@ footer {
     
 }
 /* end of details of the project page */
+
+/* Gallery Section */
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the grid space without distortion */
+    border-radius: 15px;
+    border: 3px solid var(--accent);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 12px var(--secondary);
+}
+
+.gallery-video-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* End of Gallery Section */
+
 /*----------end of HERO Project HTML Pages-------------*/
 
 /*----------for video editing portfolio hero section-------------*/

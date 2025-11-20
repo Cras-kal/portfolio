@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0 to F Hexadecimal Counter</title>
+    <title>Thesis Project</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/icon.png" type="image/png"/>
     <meta property="og:image" content="images/icon.png">
@@ -31,41 +31,68 @@
     <!-- Hero section for project pages -->
     <section class="heroProject" id="home">
             <div class="hero-content">
-                <img src="" alt="Video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qRRKNlhC7uA?si=WxyWD5uwUaVUZz4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
             </div>
             <div class="hero-text">
-                <h1>Please wait im still editing this part🙏</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi voluptatibus consequuntur saepe quidem dolor. Illo minus quibusdam voluptates iste earum at culpa quis! Magni autem modi possimus, dolore facilis iusto.</p>
+                <h1>Our Thesis Arnis Training Dummy </h1>
+                <p>ARNISENSE is a training dummy our thesis team built with sensors that track your Arnis strikes in real time. It detects impact and reads your form, then gives clear feedback after each session. It’s designed to help athletes train smarter and see their progress as they practice.</p>
             </div>
     </section>
     <!-- End of Hero section for project pages -->
     <section class="det-proj odd">
         <div class="proj-container">
-            <img src="images/" alt="">
+            <img src="images/arnisenseThesis/groupPic.png" alt="">
             <div class="proj-container-text">
-                <h1>The 3D Model</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore magni, omnis nesciunt necessitatibus numquam perspiciatis atque qui placeat hic consectetur! Nostrum expedita porro quam fuga ipsa dignissimos tempore neque consequuntur!</p>
+                <h1>Overview</h1>
+                <p>The idea started small, but everyone put in their own skills to bring it to life for the CvSU-Carmona Arnis athletes. I mostly worked on the hardware and sensor logic, but the project only came together because of the team’s effort. It’s far from perfect, but we’re proud of what we built and what we learned together.</p>
             </div>
         </div>
     </section>
     <section class="det-proj even">
         <div class="proj-container">
-            <img src="images/" alt="">
+            <img src="images/arnisenseThesis/arnisTraditional.png" alt="">
             <div class="proj-container-text">
-                <h1>Header</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia eos, a, odit eveniet explicabo vero dolores dolorum labore itaque blanditiis earum reiciendis incidunt voluptates veniam cupiditate voluptatum eius maxime officiis!</p>
+                <h1>The Problem We Tackled</h1>
+                <p>When we started this project, we saw that Arnis practitioners struggle when training alone because there’s no instant feedback to tell them if their strikes are accurate, strong, or done with the right form. Static dummies and partner drills only help so much—they don’t show mistakes, and they don’t track performance. So as a team, we challenged ourselves to build something smarter: a training dummy with sensors that can read impact, movement, and technique in real time. Our goal was simple—give athletes clear, immediate feedback so they can correct themselves while they practice.</p>
             </div>
         </div>
     </section>
     <section class="det-proj odd">
         <div class="proj-container">
-            <img src="images/" alt="">
+            <img src="images/arnisenseThesis/howWe.png" alt="">
             <div class="proj-container-text">
-                <h1>Header</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste exercitationem quibusdam quia. Praesentium, animi suscipit harum obcaecati nobis perferendis vel assumenda a rem quasi corporis libero iure incidunt rerum voluptatum.</p>
+                <h1>How We Did It</h1>
+                <p>Our team started by planning the layout of the dummy, the types of sensors we needed, and how we’d connect everything. From there, we built the dummy frame, wired the push-button hit sensors, and assembled the wearable module with the MPU-6050, vibration motor, HC-05 Bluetooth, and Arduino Nano. On the software side, we set up the data processing logic, added DTW for movement matching, and programmed the feedback system using LEDs, vibration cues, and the Raspberry Pi kiosk display. We spent a lot of time testing strikes, adjusting sensor placement, fixing inconsistencies, and refining the feedback until everything worked smoothly together.</p>
             </div>
         </div>
     </section>
+    <section class="det-proj even">
+        <div class="proj-container">
+            <img src="images/arnisenseThesis/features.png" alt="">
+            <div class="proj-container-text">
+                <h1>System Features</h1>
+                <p>ARNISENSE uses a simple but effective setup to track both strikes and movement. The dummy has momentary push-button hit sensors and LED strips that light up as visual cues whenever a strike lands. For motion tracking, the wearable module is built with an MPU-6050 IMU, a vibration motor for haptic feedback, an HC-05 Bluetooth module, and an Arduino Nano that sends data wirelessly to a Raspberry Pi on a kiosk-style touch-screen LCD station. The system uses Dynamic Time Warping (DTW) to compare the user’s movements with reference patterns, allowing it to detect technique accuracy more precisely. All of these work together to read impact, analyze motion, and give instant feedback to the athlete in real time.</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery odd">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-container containter-grid">
+                <img class="gallery-item" src="images/arnisenseThesis/3d model.png" alt="Arnisense project photo 1">
+                <img class="gallery-item" src="images/arnisenseThesis/earlyStage.png" alt="Arnisense project photo 2">
+                <img class="gallery-item" src="images/arnisenseThesis/planning.png" alt="Arnisense project photo 3">
+                <img class="gallery-item" src="images/arnisenseThesis/pushButton.png" alt="Arnisense project photo 4">
+                <img class="gallery-item" src="images/arnisenseThesis/thePrototype.png" alt="Arnisense project photo 5">
+                <img class="gallery-item" src="images/arnisenseThesis//wearables.png" alt="Arnisense project photo 6">
+            </div>
+            <div class="gallery-video-container">
+                <h3>Testing the wearables before proposal demo</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bMpQck7ro9E?si=3NyQg26IxwhIPO62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Brian Howell Vallejo. All rights reserved.</p>
     </footer>
