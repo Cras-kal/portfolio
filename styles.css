@@ -42,6 +42,12 @@ body {
     line-height: 1.6;
 }
 
+/* Global Image Reset - Prevents images from overflowing */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*-----------------------*/
 
 /* Transition */
@@ -411,7 +417,7 @@ p {
 }
 
 .skill-card img, .tool-card img {
-    max-width: 100%;
+    max-width: 100px; /* Enforce size directly on image */
     max-height: 100%;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); /* Adds depth to floating logos */
